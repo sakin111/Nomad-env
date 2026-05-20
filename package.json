@@ -1,0 +1,43 @@
+{
+  "name": "env-auto",
+  "version": "0.1.0",
+  "description": "Auto-generate TypeScript autocomplete for environment variables from .env files",
+  "author": "Your Name <you@example.com>",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json && node dist/cli/index.js generate",
+    "clean": "rimraf dist",
+    "prepare": "npm run build",
+    "start": "node ./dist/cli/index.js",
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "bin": {
+    "env-auto": "./dist/cli/index.js"
+  },
+  "keywords": [
+    "env",
+    "dotenv",
+    "env-autocomplete",
+    "typescript",
+    "intellisense"
+  ],
+  "dependencies": {
+    "chalk": "^5.0.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "rimraf": "^5.0.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

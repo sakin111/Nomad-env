@@ -1,0 +1,5 @@
+
+node_modules
+.env
+src/env.auto.ts
+src/env.auto.d.ts
