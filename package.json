@@ -1,5 +1,5 @@
 {
-  "name": "env-auto",
+  "name": "nomad-env",
   "version": "0.1.0",
   "description": "Auto-generate TypeScript autocomplete for environment variables from .env files",
   "author": "Your Name <you@example.com>",
