@@ -8,7 +8,8 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
-    "dist"
+    "dist",
+    "README.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json && node dist/cli/index.js generate",
@@ -18,7 +19,7 @@
     "test": "echo \"No tests configured\" && exit 0"
   },
   "bin": {
-    "env-auto": "./dist/cli/index.js"
+    "nomad-env": "./dist/cli/index.js"
   },
   "keywords": [
     "env",
