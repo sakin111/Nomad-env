@@ -11,6 +11,10 @@
     "dist",
     "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sakin111/Nomad-env.git"
+  },
   "scripts": {
     "build": "tsc -p tsconfig.json && node dist/cli/index.js generate",
     "clean": "rimraf dist",
