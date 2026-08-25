@@ -8,4 +8,5 @@ export type EnvSpec = {
 export declare function parseEnvFiles(opts?: {
     cwd?: string;
     files?: string[];
+    schemaFiles?: string[];
 }): Promise<EnvSpec>;
